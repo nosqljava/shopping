@@ -5,11 +5,7 @@
 <head>
   <title>homepage</title>
   <meta charset="utf-8">
-  <script type="text/javascript" src="${pageContext.request.contextPath}/ckeditor/ckeditor.js">     </script>
   <script type="text/JavaScript">
- $(function() {
-         CKEDITOR.replace('detail'); // <TEXTAREA>태그 id 값
-         });
  
  function checkIn(f){
      if (f.pname.value == ""){
@@ -22,15 +18,15 @@
              f.price.focus();
              return false;
      }
-     if (CKEDITOR.instances['detail'].getData() == '') {
-         window.alert('내용을 입력해 주세요.');
-         CKEDITOR.instances['detail'].focus();
+     if (f.detail.value == ""){
+         alert("상품내용을 입력하세요");
+         f.detail.focus();
          return false;
-     }
+ 	 }
      if (f.stock.value == ""){
-             alert("재고를 입력하세요");
-             f.stock.focus();
-             return false;
+         alert("재고를 입력하세요");
+         f.stock.focus();
+         return false;
      }
 }
  </script>

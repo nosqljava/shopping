@@ -18,9 +18,6 @@ public class WebMvcConfiguration implements WebMvcConfigurer {
         registry.addResourceHandler("/member/storage/**")
                  .addResourceLocations("file:///" + UploadMem.getUploadDir());
     
-        registry.addResourceHandler("/ckstorage/files/**")
-        		.addResourceLocations("file:///"+UploadCk.getUploadDir()+"/files/");
-
     
     }
  

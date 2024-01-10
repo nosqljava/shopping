@@ -50,12 +50,11 @@ dependencies {
     implementation group: 'commons-fileupload', name: 'commons-fileupload', version: '1.3.3'
 	 // https://mvnrepository.com/artifact/org.aspectj/aspectjweaver
  	implementation group: 'org.aspectj', name: 'aspectjweaver', version: '1.9.6'
- 	// https://mvnrepository.com/artifact/org.webjars.npm/ckeditor5
-	implementation 'org.webjars.npm:ckeditor5:40.1.0'
-
  	
 }
+
 
 tasks.named('test') {
 	useJUnitPlatform()
 }
+

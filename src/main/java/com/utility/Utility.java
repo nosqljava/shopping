@@ -107,6 +107,9 @@ public class Utility {
 				} else if (os.equals("windows 10")) {
 					System.out.println("os: " + os);
 					serverFullPath = basePath + "\\" + filename;
+				} else if (os.equals("windows 11")) {
+					System.out.println("os: " + os);
+					serverFullPath = basePath + "\\" + filename;
 				} else if (os.equals("linux")) {
 					System.out.println("리눅스");
 					serverFullPath = basePath + "/" + filename;

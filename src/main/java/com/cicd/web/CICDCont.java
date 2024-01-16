@@ -29,7 +29,10 @@ public class CICDCont {
 		} else if (sw == 2) {
 			msg = "/cide workflow 테스트";
 			log.info(msg);
-		}
+		} else if (sw == 3) {
+			msg = "/cide Github action + EC2 최종 테스트 1";
+			log.info(msg);
+		} 
 
 		return "<h3>" + msg + "</h3>";
 		

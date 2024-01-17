@@ -1,4 +1,4 @@
-package com.jpa.review;
+package com.controller;
 
 import java.util.HashMap;
 import java.util.List;
@@ -18,6 +18,8 @@ import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
+import com.jpa.review.ReviewDTO;
+import com.jpa.review.ReviewService;
 import com.utility.Utility;
 
 @RestController

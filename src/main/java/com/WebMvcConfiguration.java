@@ -16,12 +16,12 @@ public class WebMvcConfiguration implements WebMvcConfigurer {
 
 	}
 
-	@Override
-	public void addCorsMappings(CorsRegistry registry) {
-		registry.addMapping("/**").allowedOriginPatterns("*") // React 앱의 URL, 2.4 부터 allowedOriginPatterns 사용
-				.allowedMethods("GET", "POST", "PUT", "DELETE")
-				.allowedHeaders("*")
-				.allowCredentials(true);
-	}
+//	@Override
+//	public void addCorsMappings(CorsRegistry registry) {
+//		registry.addMapping("/**").allowedOriginPatterns("*") // React 앱의 URL, 2.4 부터 allowedOriginPatterns 사용
+//				.allowedMethods("GET", "POST", "PUT", "DELETE")
+//				.allowedHeaders("*")
+//				.allowCredentials(true);
+//	}
 
 }

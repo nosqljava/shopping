@@ -34,7 +34,7 @@ public class CICDCont {
 			log.info(msg);
 		} 
 		  else if (sw == 4) {
-			msg = "/cide Github action + EC2 최종 테스트 222";
+			msg = "/cide Github action + EC2 최종 테스트 2";
 			log.info(msg);
 		} 
 

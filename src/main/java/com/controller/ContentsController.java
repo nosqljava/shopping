@@ -223,10 +223,36 @@ public class ContentsController {
 	  }
 	  
 	  @GetMapping("/contents/detail/{contentsno}")
-	  public String detail(@PathVariable("contentsno") int contentsno, Model model) {
+	  public String detail(@PathVariable("contentsno") int contentsno, 
+			  Model model, HttpServletRequest request) {
 	      
 	     model.addAttribute("dto",service.read(contentsno));
-	    
+	     /* 댓글 관련 시작 */
+	     int nPage = 1;
+	     if (request.getParameter("nPage") != null) {
+	             nPage = Integer.parseInt(request.getParameter("nPage"));
+	     }
+	     int recordPerPage = 3;
+
+	     //oracle
+	     //int sno = ((nPage - 1) * recordPerPage) + 1;
+	     //int eno = nPage * recordPerPage;
+
+	    //mysql
+	    int sno = (nPage - 1) * recordPerPage;
+	    int eno = recordPerPage;
+
+	     Map map = new HashMap();
+	     map.put("sno", sno);
+	     map.put("eno", eno);
+	     map.put("nPage", nPage);
+
+	     model.addAllAttributes(map);
+
+	     /* 댓글 처리 끝 */
+
+	     
+	     
 	      return "/contents/detail";
 	  }
 	

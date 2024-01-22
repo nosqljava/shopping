@@ -40,7 +40,7 @@
        <li class="list-group-item">결제금액 : ${order.total} 원, 주문상태 : ${order.ostate}
            <c:forEach var="detail" items="${order.list}">
             <li class="list-group-item">${detail.pname}, ${detail.quantity}개
-            <a href="review/create/{order.contentsno}"><span class="badge rounded-pill bg-dark">Rivew</span></a></li>
+            <a href="/contents/detail/${detail.contentsno}"><span class="badge rounded-pill bg-dark">Rivew</span></a></li>
            </c:forEach>
         </c:forEach>
     </c:otherwise>

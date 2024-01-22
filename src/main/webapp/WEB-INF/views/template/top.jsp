@@ -71,7 +71,7 @@
           <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Community</a>
           <ul class="dropdown-menu">
             <li><a class="dropdown-item" href="${root}/member/mypage">Mypage</a></li>
-            <li><a class="dropdown-item" href="${root}/contents/detail">Review</a></li>
+            <li><a class="dropdown-item" href="http://18.188.147.214:3000">Review</a></li>
             <li><a class="dropdown-item" href="${root}/notice/list">Notice</a></li>
             <li><a class="dropdown-item" href="#">Q&A</a></li>
           </ul>

@@ -6,7 +6,11 @@
   <title>homepage</title>
   <meta charset="utf-8">
   <script type="text/JavaScript">
+<<<<<<< HEAD
 
+=======
+ 
+>>>>>>> b70699fee7743d385b7249682f1752e326042ce4
  function checkIn(f){
      if (f.pname.value == ""){
              alert("상품명을 입력하세요");
@@ -18,15 +22,20 @@
              f.price.focus();
              return false;
      }
+<<<<<<< HEAD
      if (f.detail.value == '') {
          alert('내용을 입력해 주세요.');
+=======
+     if (f.detail.value == ""){
+         alert("상품내용을 입력하세요");
+>>>>>>> b70699fee7743d385b7249682f1752e326042ce4
          f.detail.focus();
          return false;
-     }
+ 	 }
      if (f.stock.value == ""){
-             alert("재고를 입력하세요");
-             f.stock.focus();
-             return false;
+         alert("재고를 입력하세요");
+         f.stock.focus();
+         return false;
      }
 }
  </script>

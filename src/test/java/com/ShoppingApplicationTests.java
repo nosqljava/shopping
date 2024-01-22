@@ -12,11 +12,5 @@ class ShoppingApplicationTests {
 	void contextLoads() {
 	}
 
-	@Autowired
-	private SqlSessionTemplate sqlSession;
 	
-	@Test
-	  public void testSqlSession() throws Exception{
-	    System.out.println(sqlSession.toString());
-	  }
 }
